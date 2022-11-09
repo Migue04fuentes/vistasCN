@@ -1,3 +1,6 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
 body{background: #eee url(http://subtlepatterns.com/patterns/sativa.png);}
 html,body{
     position: relative;
@@ -43,6 +46,7 @@ html,body{
 
 /* Imagen de usuario */
 .avatar{
+    overflow: hidden;
     width: 100px;height: 100px;
     margin: 10px auto 30px;
     border-radius: 100%;
@@ -80,8 +84,26 @@ html,body{
     border-top: 0;
 }
 
+/* Ocultar y mostrar password */
+#eye-pass{
+    position: absolute;
+    right: 90px;
+    transform: translate(0, 100%);
+    cursor: pointer;
+}
+
+#eye-pass-hidden{
+    position: absolute;
+    right: 90px;
+    transform: translate(0, 100%);
+    cursor: pointer;
+    display: none;
+}
+
+
 /* Botón de login */
 .form-box button.login{
+    width: 200px;
     margin-top:15px;
     padding: 10px 20px;
     background-color: #27EC35;
@@ -133,4 +155,44 @@ html,body{
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+}
+
+
+
+/*PÁGINA SIGNUP  */
+/* Contenedor principal */
+.wm_signup_container{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    padding: 30px 40px 40px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* título */
+.wm_signup_titulo{
+    position: relative;
+    text-align: end;
+    font-family: 'Concert One', cursive;
+    font-size: 1.6em;
+    top: -30px;
+    padding: 5px 5px 0px 5px;
+    border-bottom: 1px solid #000;
+}
+
+/* Organización del elementos del formulario */
+.wm_signup_card{
+    display: inline-flex;
+    position: relative;
+    text-align: start;
+}
+
+/* Organización de NOmbres */
+.wm_signup_nombres{
+    display: grid;
+    position: relative;
 }
