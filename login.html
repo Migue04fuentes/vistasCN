@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <!-- Login -->
+    <div class="container">
+        <div class="login-container">
+            <div id="output"></div>
+            <div class="avatar"></div>
+            <div class="form-box">
+                <form action="" method="">
+                    <input name="user-login" id="user-login" type="text" maxlength="15" placeholder="cédula">
+                    <input type="password-login" id="password-login" maxlength="4" placeholder="Password">
+                    <button class="btn btn-info btn-block login" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // Validación de solo números
+        function soloNumeros(e) {
+            var key = e.charCode;
+            return key >= 48 && key <= 57;
+        }
+
+        //Solo números en usuario
+        let input_user = document.getElementById('user-login');
+        input_user.addEventListener('keypress', function (e) {
+            if(!soloNumeros(event)){
+                e.preventDefault();
+            }
+        });
+
+        // Solo número en password
+        let input_password = document.getElementById('password-login');
+        input_password.addEventListener('keypress', function(){
+            
+        });
+
+
+    </script>
+</body>
+
+</html>
