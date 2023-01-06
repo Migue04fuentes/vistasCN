@@ -164,8 +164,8 @@ html,body{
 .wm_signup_container{
     position: flex;
     flex-wrap: wrap;
-    width: 30%;
-    height: 500px;
+    width: 40%;
+    height: 300px;
     margin: 50px auto;
     padding: 40px 40px 40px;
     text-align: center;
@@ -192,7 +192,7 @@ html,body{
     text-align: left;
 }
 
-/* Organización de NOmbres */
+/* Organización de Nombres */
 .wm_signup_input{
     display: flex;
     flex-direction: column;
